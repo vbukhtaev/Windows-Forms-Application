@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_SelectUnsoldTickets" targetNamespace="http://tempuri.org/DataSet_SelectUnsoldTickets.xsd" xmlns:mstns="http://tempuri.org/DataSet_SelectUnsoldTickets.xsd" xmlns="http://tempuri.org/DataSet_SelectUnsoldTickets.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="my_databaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="my_databaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.my_databaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_unsold_ticketsTableAdapter" GeneratorDataComponentClassName="view_unsold_ticketsTableAdapter" Name="view_unsold_tickets" UserDataComponentName="view_unsold_ticketsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="my_databaseConnectionString (Settings)" DbObjectName="my_database.dbo.view_unsold_tickets" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, departure_city, departure_airport, destination_city, destination_airport, departure_date, arrival_date, price, manufacturer_name, model FROM dbo.view_unsold_tickets</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="departure_city" DataSetColumn="departure_city" />
+              <Mapping SourceColumn="departure_airport" DataSetColumn="departure_airport" />
+              <Mapping SourceColumn="destination_city" DataSetColumn="destination_city" />
+              <Mapping SourceColumn="destination_airport" DataSetColumn="destination_airport" />
+              <Mapping SourceColumn="departure_date" DataSetColumn="departure_date" />
+              <Mapping SourceColumn="arrival_date" DataSetColumn="arrival_date" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="manufacturer_name" DataSetColumn="manufacturer_name" />
+              <Mapping SourceColumn="model" DataSetColumn="model" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_SelectUnsoldTickets" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet_SelectUnsoldTickets" msprop:Generator_UserDSName="DataSet_SelectUnsoldTickets">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_unsold_tickets" msprop:Generator_TableClassName="view_unsold_ticketsDataTable" msprop:Generator_TableVarName="tableview_unsold_tickets" msprop:Generator_TablePropName="view_unsold_tickets" msprop:Generator_RowDeletingName="view_unsold_ticketsRowDeleting" msprop:Generator_RowChangingName="view_unsold_ticketsRowChanging" msprop:Generator_RowEvHandlerName="view_unsold_ticketsRowChangeEventHandler" msprop:Generator_RowDeletedName="view_unsold_ticketsRowDeleted" msprop:Generator_UserTableName="view_unsold_tickets" msprop:Generator_RowChangedName="view_unsold_ticketsRowChanged" msprop:Generator_RowEvArgName="view_unsold_ticketsRowChangeEvent" msprop:Generator_RowClassName="view_unsold_ticketsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="departure_city" msprop:Generator_ColumnVarNameInTable="columndeparture_city" msprop:Generator_ColumnPropNameInRow="departure_city" msprop:Generator_ColumnPropNameInTable="departure_cityColumn" msprop:Generator_UserColumnName="departure_city">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="departure_airport" msprop:Generator_ColumnVarNameInTable="columndeparture_airport" msprop:Generator_ColumnPropNameInRow="departure_airport" msprop:Generator_ColumnPropNameInTable="departure_airportColumn" msprop:Generator_UserColumnName="departure_airport">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="destination_city" msprop:Generator_ColumnVarNameInTable="columndestination_city" msprop:Generator_ColumnPropNameInRow="destination_city" msprop:Generator_ColumnPropNameInTable="destination_cityColumn" msprop:Generator_UserColumnName="destination_city">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="destination_airport" msprop:Generator_ColumnVarNameInTable="columndestination_airport" msprop:Generator_ColumnPropNameInRow="destination_airport" msprop:Generator_ColumnPropNameInTable="destination_airportColumn" msprop:Generator_UserColumnName="destination_airport">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="departure_date" msprop:Generator_ColumnVarNameInTable="columndeparture_date" msprop:Generator_ColumnPropNameInRow="departure_date" msprop:Generator_ColumnPropNameInTable="departure_dateColumn" msprop:Generator_UserColumnName="departure_date" type="xs:dateTime" />
+              <xs:element name="arrival_date" msprop:Generator_ColumnVarNameInTable="columnarrival_date" msprop:Generator_ColumnPropNameInRow="arrival_date" msprop:Generator_ColumnPropNameInTable="arrival_dateColumn" msprop:Generator_UserColumnName="arrival_date" type="xs:dateTime" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" />
+              <xs:element name="manufacturer_name" msprop:Generator_ColumnVarNameInTable="columnmanufacturer_name" msprop:Generator_ColumnPropNameInRow="manufacturer_name" msprop:Generator_ColumnPropNameInTable="manufacturer_nameColumn" msprop:Generator_UserColumnName="manufacturer_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnPropNameInTable="modelColumn" msprop:Generator_UserColumnName="model">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_unsold_tickets" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
